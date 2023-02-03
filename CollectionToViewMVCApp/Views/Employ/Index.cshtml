@@ -1,0 +1,17 @@
+﻿@model IEnumerable<CollectionToViewMVCApp.Models.Employ>
+<table border="3">
+    <tr>
+        <th>Employe Id </th>
+        <th>Employe Name </th>
+        <th>Salary</th>
+    </tr>
+    @foreach(var m in Model)
+            {
+                <tr>
+                    <td>@m.EmpId</td>
+                    <td>@m.EName</td>
+                    <td>@m.Salary</td>
+
+                </tr>
+            }
+</table>
